@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #333;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+   
+}
+
+.navigation ul li{
+   display: inline;
+   margin: 0 40px;
+}
+
+
+.navigation ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navigation ul li a {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #007bff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.logo{
+    color: whitesmoke;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.shaun{
+    color: red;
+    font-weight: bolder;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 60px;
+    gap: 40px;
+}
+
+.hero-text{
+    color: whitesmoke;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.picture{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+     padding: 20px;   
+}
+
+.picture img{
+    width: 400px;
+    height: 400px;
+    border: black 2px;
+    border-radius: 90%;
+    box-shadow: red 0px 0px 10px;
+}
+
+button {
+    align-items: center;
+    background: rgb(132, 120, 120);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+   
+}
+
+
+button:hover {
+    transition: 0.3s;
+    background: #882704;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .First{
+        flex-direction: column;
+    }
+.navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+            }
+
+.navigation ul li{
+    margin: 10px 0;
+}
+.navigation ul li a {
+    font-size: 18px;
+}
+}
+
+
+/* About me section */
+.about-me {
+    background-color: black;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-me h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.about-text{
+    color: whitesmoke;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.micheal{
+    color: red;
+    font-weight: bolder;
+}
+
+.my-picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.my-picture img{
+    width: 200px;
+    height: 200px;
+    border: black 2px;
+    border-radius: 90%;
+}
+
+ /* CONTACT SECTION */
+.contact{
+      background-color: black;
+      margin-top: 20px;
+}
+
+.contact-me {
+    padding: 80px 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.contact-me h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.contact-text p{
+    color: whitesmoke;
+    line-height: 1.6;
+    margin: 20px 20px;
+}
+
+.contact-info p{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    color: whitesmoke;
+    line-height: 1.6;
+    margin: 20px 20px;
+    font-size: 20px;
+}
+
+.contact-info a{
+    color: rgb(10, 94, 237);
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: smaller;
+}
