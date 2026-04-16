@@ -108,31 +108,11 @@ button {
    
 }
 
-
 button:hover {
     transition: 0.3s;
     background: #882704;
     cursor: pointer;
 }
-
-@media (max-width: 768px) {
-    .First{
-        flex-direction: column;
-    }
-.navigation {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-            }
-
-.navigation ul li{
-    margin: 10px 0;
-}
-.navigation ul li a {
-    font-size: 18px;
-}
-}
-
 
 /* About me section */
 .about-me {
@@ -144,7 +124,7 @@ button:hover {
 
 .about-me h2 {
     font-size: 32px;
-    margin-top: 20px;
+    margin-bottom: 60px;
     color: whitesmoke;
 }
 
@@ -152,6 +132,10 @@ button:hover {
     color: whitesmoke;
     line-height: 1.6;
     margin: 0 auto;
+}
+
+.about-text p{
+    margin-bottom: 20px;
 }
 
 .micheal{
@@ -163,6 +147,7 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 .my-picture img{
     width: 200px;
@@ -186,7 +171,7 @@ button:hover {
 .contact-me h2{
     font-size: 35px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-bottom: 40px;
     color: whitesmoke;
     font-family: Arial, sans-serif;
 }
@@ -197,19 +182,105 @@ button:hover {
     margin: 20px 20px;
 }
 
-.contact-info p{
+.contact-cards{
     display: flex;
-        justify-content: center;
-        align-items: center;
-    color: whitesmoke;
-    line-height: 1.6;
-    margin: 20px 20px;
-    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
 }
 
-.contact-info a{
-    color: rgb(10, 94, 237);
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: smaller;
+.card-email {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-email h3{
+    color: white;
+    font-weight: bolder;
+}
+
+.card-email:hover {
+  transform: translateY(-5px);
+}
+
+.card-email a {
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-phone {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 60px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-phone h3{
+    color: white;
+    font-weight: bolder;
+}
+
+.card-phone:hover{
+  transform: translateY(-5px);
+}
+
+.card-phone a{
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-linkedin {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-linkedin h3{
+    color: white;
+    font-weight: bolder;
+}
+
+.card-linkedin:hover {
+  transform: translateY(-5px);
+}
+
+.card-linkedin a {
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;   
+  background: #0000007b;
+  color: white;
+  padding: 20px 60px;
+         
+}
+
+.footer-icons a {
+ display: inline;
+  margin: 0 40px;
+  font-size: 22px;
+  color: blue;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: translateY(-3px);
+  color: white;
 }
