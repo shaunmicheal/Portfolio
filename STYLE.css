@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     color: #333;
+    overflow-x: hidden;
 }
 
 .navigation {
@@ -10,13 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-}
-
-.navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+   
 }
 
 .navigation ul li {
@@ -71,6 +66,13 @@ body {
     font-style: italic;
 }
 
+/* Hide hamburger elements on all screen sizes */
+.menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+/* HERO */
 .hero {
     display: flex;
     align-items: center;
@@ -112,6 +114,7 @@ body {
     height: 400px;
     border-radius: 90%;
     box-shadow: red 0px 0px 10px;
+    object-fit: cover;
 }
 
 button {
@@ -129,9 +132,10 @@ button:hover {
     background: #882704;
 }
 
+/* About me section */
 .about-me {
     background-color: black;
-    padding: 80px 20px;
+    padding: 80px 60px;
     text-align: center;
     margin-top: 20px;
 }
@@ -145,6 +149,7 @@ button:hover {
 .about-text {
     color: whitesmoke;
     line-height: 1.6;
+    max-width: 800px;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -164,16 +169,16 @@ button:hover {
     width: 200px;
     height: 200px;
     border-radius: 90%;
-    box-shadow: red 0px 0px 10px;
 }
 
-.contact {
-    background-color: black;
-    margin-top: 20px;
+ /* CONTACT SECTION */
+.contact{
+      background-color: black;
+      margin-top: 20px;
 }
 
 .contact-me {
-    padding: 80px 20px;
+    padding: 80px 60px;
     text-align: center;
     color: whitesmoke;
 }
@@ -183,33 +188,77 @@ button:hover {
     font-weight: bold;
     margin-bottom: 40px;
     color: whitesmoke;
-    font-family: Arial, sans-serif;
 }
 
 .contact-text p {
     color: whitesmoke;
     line-height: 1.6;
-    margin: 20px;
+    margin: 20px 20px;
 }
 
 .contact-cards {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
     margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-.card-email,
-.card-phone,
-.card-linkedin {
-    background-color: #005eff7b;
+.card-email {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-email h3{
     color: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: whitesmoke 0px 0px 10px;
-    transition: transform 0.3s ease;
+    font-weight: bolder;
+}
+
+.card-email:hover {
+  transform: translateY(-5px);
+}
+
+.card-email a {
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-phone {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 60px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-phone h3{
+    color: white;
+    font-weight: bolder;
+}
+
+.card-phone:hover{
+  transform: translateY(-5px);
+}
+
+.card-phone a{
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-linkedin {
+  background-color: #005eff7b;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: whitesmoke 0px 0px 10px;
+  transition: transform 0.3s ease;
 }
 
 .card-email h3,
@@ -229,246 +278,32 @@ button:hover {
 .card-email a,
 .card-phone a,
 .card-linkedin a {
-    color: burlywood;
-    text-decoration: none;
-    font-weight: bold;
+  color: burlywood;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/* FOOTER */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0000007b;
-    color: white;
-    padding: 20px 60px;
-}
-
-.footer p {
-    margin: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;   
+  background: #0000007b;
+  color: white;
+  padding: 20px 60px;
+         
 }
 
 .footer-icons a {
-    display: inline;
-    margin: 0 15px;
-    font-size: 22px;
-    color: #4d79ff;
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s;
+ display: inline;
+  margin: 0 40px;
+  font-size: 22px;
+  color: blue;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .footer-icons a:hover {
-    transform: translateY(-3px);
-}
-
-.footer-icons a:hover .fa-instagram {
-    color: rgb(225, 1, 39);
-}
-
-.footer-icons a:hover .fa-facebook {
-    color: #3b5998;
-}
-
-.footer-icons a:hover .fa-x-twitter {
-    color: white;
-}
-
-@media (max-width: 992px) {
-    .navigation {
-        padding: 20px 30px;
-    }
-
-    .navigation ul li {
-        margin: 0 20px;
-    }
-
-    .hero {
-        padding: 40px 30px;
-        gap: 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 38px;
-    }
-
-    .name {
-        font-size: 42px;
-    }
-
-    .picture img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .footer {
-        padding: 20px 30px;
-    }
-
-    .footer-icons a {
-        margin: 0 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navigation {
-        flex-wrap: wrap;
-        padding: 15px 20px;
-        position: relative;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    .navigation ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 15px 0 0 0;
-        text-align: center;
-        background-color: #111;
-        border-radius: 10px;
-    }
-
-    .menu-toggle:checked ~ ul {
-        display: flex;
-    }
-
-    .navigation ul li {
-        display: block;
-        margin: 12px 0;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-    }
-
-    .picture {
-        padding: 10px;
-    }
-
-    .picture img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .name {
-        font-size: 36px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .about-me {
-        padding: 60px 20px;
-    }
-
-    .about-me h2,
-    .contact-me h2 {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-
-    .my-picture img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .contact-cards {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .card-email,
-    .card-phone,
-    .card-linkedin {
-        width: auto;
-        padding: 20px;
-        margin: 0 20px;
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-        padding: 25px 20px;
-    }
-
-    .footer-icons a {
-        margin: 0 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo,
-    .shaun {
-        font-size: 32px;
-    }
-
-    .hero-text h1 {
-        font-size: 26px;
-    }
-
-    .name {
-        font-size: 30px;
-    }
-
-    .hero-text p {
-        font-size: 15px;
-    }
-
-    .picture img {
-        width: 200px;
-        height: 200px;
-    }
-
-    button {
-        padding: 12px 22px;
-        font-size: 14px;
-    }
-
-    .about-me {
-        padding: 50px 15px;
-    }
-
-    .about-text p {
-        font-size: 15px;
-    }
-
-    .my-picture img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .contact-me {
-        padding: 50px 15px;
-    }
-
-    .contact-me h2 {
-        font-size: 26px;
-    }
-
-    .card-email,
-    .card-phone,
-    .card-linkedin {
-        margin: 0 10px;
-        padding: 18px;
-    }
-
-    .footer {
-        font-size: 14px;
-        padding: 20px 15px;
-    }
-
-    .footer-icons a {
-        margin: 0 10px;
-        font-size: 20px;
-    }
+  transform: translateY(-3px);
+  color: white;
 }
