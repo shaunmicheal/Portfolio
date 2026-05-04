@@ -11,9 +11,17 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-   
 }
 
+<<<<<<< HEAD
+=======
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+>>>>>>> 8057ab3201ee0babad0e5a7f039bf4982865c2e4
 .navigation ul li {
     display: inline;
     margin: 0 40px;
@@ -30,6 +38,7 @@ body {
     color: #007bff;
 }
 
+<<<<<<< HEAD
 .menu-toggle {
     display: none;
 }
@@ -51,6 +60,8 @@ body {
     transition: 0.3s;
 }
 
+=======
+>>>>>>> 8057ab3201ee0babad0e5a7f039bf4982865c2e4
 .logo {
     color: whitesmoke;
     margin: 10px;
@@ -132,7 +143,7 @@ button:hover {
     background: #882704;
 }
 
-/* About me section */
+/* ABOUT */
 .about-me {
     background-color: black;
     padding: 80px 60px;
@@ -169,12 +180,13 @@ button:hover {
     width: 200px;
     height: 200px;
     border-radius: 90%;
+    object-fit: cover;
 }
 
- /* CONTACT SECTION */
-.contact{
-      background-color: black;
-      margin-top: 20px;
+/* CONTACT */
+.contact {
+    background-color: black;
+    margin-top: 20px;
 }
 
 .contact-me {
@@ -193,7 +205,7 @@ button:hover {
 .contact-text p {
     color: whitesmoke;
     line-height: 1.6;
-    margin: 20px 20px;
+    margin: 20px 0;
 }
 
 .contact-cards {
@@ -202,63 +214,22 @@ button:hover {
     align-items: stretch;
     gap: 24px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
-.card-email {
-  background-color: #005eff7b;
-  color: white;
-  padding: 20px 20px;
-  border-radius: 20px;
-  box-shadow: whitesmoke 0px 0px 10px;
-  transition: transform 0.3s ease;
-}
-
-.card-email h3{
-    color: white;
-    font-weight: bolder;
-}
-
-.card-email:hover {
-  transform: translateY(-5px);
-}
-
-.card-email a {
-  color: burlywood;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.card-phone {
-  background-color: #005eff7b;
-  color: white;
-  padding: 20px 60px;
-  border-radius: 20px;
-  box-shadow: whitesmoke 0px 0px 10px;
-  transition: transform 0.3s ease;
-}
-
-.card-phone h3{
-    color: white;
-    font-weight: bolder;
-}
-
-.card-phone:hover{
-  transform: translateY(-5px);
-}
-
-.card-phone a{
-  color: burlywood;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+.card-email,
+.card-phone,
 .card-linkedin {
-  background-color: #005eff7b;
-  color: white;
-  padding: 20px 20px;
-  border-radius: 20px;
-  box-shadow: whitesmoke 0px 0px 10px;
-  transition: transform 0.3s ease;
+    background-color: #005eff7b;
+    color: white;
+    padding: 24px 32px;
+    border-radius: 20px;
+    box-shadow: whitesmoke 0px 0px 10px;
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    box-sizing: border-box;
 }
 
 .card-email h3,
@@ -278,32 +249,273 @@ button:hover {
 .card-email a,
 .card-phone a,
 .card-linkedin a {
-  color: burlywood;
-  text-decoration: none;
-  font-weight: bold;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-word;
 }
 
 /* FOOTER */
 .footer {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;   
-  background: #0000007b;
-  color: white;
-  padding: 20px 60px;
-         
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0000007b;
+    color: white;
+    padding: 20px 60px;
 }
 
 .footer-icons a {
- display: inline;
-  margin: 0 40px;
-  font-size: 22px;
-  color: blue;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+    display: inline;
+    margin: 0 16px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-icons a:hover {
-  transform: translateY(-3px);
-  color: white;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.fa-instagram {
+    color: #E1306C;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-x-twitter {
+    color: whitesmoke;
+}
+
+/* ================================
+   RESPONSIVE — Large tablets (≤ 992px)
+   ================================ */
+@media (max-width: 992px) {
+    .navigation {
+        padding: 20px 30px;
+    }
+
+    .navigation ul li {
+        margin: 0 20px;
+    }
+
+    .hero {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 42px;
+    }
+
+    .picture img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .about-me {
+        padding: 60px 40px;
+    }
+
+    .contact-me {
+        padding: 60px 40px;
+    }
+
+    .footer {
+        padding: 20px 30px;
+    }
+}
+
+/* ================================
+   RESPONSIVE — Tablets (≤ 768px)
+   ================================ */
+@media (max-width: 768px) {
+    .navigation {
+        flex-wrap: wrap;
+        padding: 16px 22px;
+        gap: 10px;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 4px;
+    }
+
+    .navigation ul li {
+        margin: 4px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 22px 60px;
+        gap: 24px;
+    }
+
+    .picture img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .about-me {
+        padding: 60px 22px;
+    }
+
+    .about-me h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .my-picture img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contact-me {
+        padding: 60px 16px;
+    }
+
+    .contact-me h2 {
+        font-size: 28px;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .card-email,
+    .card-phone,
+    .card-linkedin {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 24px 22px;
+    }
+
+    .footer-icons a {
+        margin: 0 12px;
+    }
+}
+
+/* ================================
+   RESPONSIVE — Phones (≤ 480px)
+   ================================ */
+@media (max-width: 480px) {
+    .logo,
+    .shaun {
+        font-size: 28px;
+    }
+
+    .navigation ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 30px 16px 50px;
+    }
+
+    .picture img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .about-me {
+        padding: 50px 16px;
+    }
+
+    .about-me h2 {
+        font-size: 24px;
+    }
+
+    .my-picture img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .contact-me {
+        padding: 50px 12px;
+    }
+
+    .contact-me h2 {
+        font-size: 24px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .card-email,
+    .card-phone,
+    .card-linkedin {
+        padding: 18px 14px;
+        max-width: 100%;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .footer {
+        padding: 20px 16px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-icons a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
 }
