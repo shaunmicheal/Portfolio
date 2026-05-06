@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shauns Portfolio</title>
-    <link rel="stylesheet" href="/STYLE.css">
+    <link rel="stylesheet" href="STYLE.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
         <div class="navigation">
             <label class="logo"><span class="shaun">Sh</span>aun</label>
 
+            <!-- Checkbox must come BEFORE the menu-icon label and ul for CSS ~ selector to work -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
             <label for="menu-toggle" class="menu-icon">
@@ -28,34 +29,31 @@
             </ul>
         </div>
 
-    <div class="hero">
+        <div class="hero">
+            <div class="picture">
+                <img src="https://portfolio-flax-alpha-39.vercel.app/pics/shaun.jpeg" alt="Road">
+            </div>
 
-    <div class="picture">
-        <img src="https://portfolio-flax-alpha-39.vercel.app/pics/shaun.jpeg" alt="Road">
-    </div>
-
-    <div class="hero-text">
-    <h1>Hello im <span class="name">Shaun</span></h1>
-    <p>I am a Software developer and Web developer passionate about creating engaging user experiences.</p>
-    <button>Lets Connect</button>
-    </div>
-</div>
+            <div class="hero-text">
+                <h1>Hello im <span class="name">Shaun</span></h1>
+                <p>I am a Software developer and Web developer passionate about creating engaging user experiences.</p>
+                <button>Lets Connect</button>
+            </div>
+        </div>
     </section>
 
-    
-<!-- About me section -->
- <section id="about.html" class="About">
-<div class="about-me">
-    <h2>About Me</h2>
-    <div class="my-picture">
-        <img src="https://portfolio-flax-alpha-39.vercel.app/pics/me.jpeg" alt="My Picture" width="300" height="300">
-    </div>
-
-    <div class="about-text">
-      <p>Hi, I'm a passionate Software and Web Developer with a love for building clean, efficient and visually engaging digital experiences. I enjoy turning ideas into reality through code, whether that's crafting perfect interfaces or building robust backend systems. When I'm not coding, I'm constantly learning, exploring new technologies and pushing the boundaries of what's possible on the web. I believe great software is built at the intersection of creativity and technical excellence.</p>
-    </div>
-</div>
-</section>
+    <!-- About me section -->
+    <section id="about.html" class="About">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <div class="my-picture">
+                <img src="https://portfolio-flax-alpha-39.vercel.app/pics/me.jpeg" alt="My Picture" width="300" height="300">
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm a passionate Software and Web Developer with a love for building clean, efficient and visually engaging digital experiences. I enjoy turning ideas into reality through code, whether that's crafting perfect interfaces or building robust backend systems. When I'm not coding, I'm constantly learning, exploring new technologies and pushing the boundaries of what's possible on the web. I believe great software is built at the intersection of creativity and technical excellence.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="contact.html" class="contact">
         <div class="contact-me">
@@ -66,7 +64,7 @@
             <div class="contact-cards">
                 <div class="card-email">
                     <h3>Email</h3>
-                    <p><a href="mailto:shaunjeranyama@example.com">shaunjeranyama@example.com</a></p>
+                    <p><a href="mailto:shaunjeranyama@gmail.com">shaunjeranyama@gmail.com</a></p>
                 </div>
                 <div class="card-phone">
                     <h4>Phone</h4>
