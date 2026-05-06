@@ -35,7 +35,6 @@ body {
     color: #007bff;
 }
 
-/* Always hidden on desktop */
 .menu-toggle {
     display: none;
 }
@@ -72,7 +71,6 @@ body {
     font-style: italic;
 }
 
-/* HERO */
 .hero {
     display: flex;
     align-items: center;
@@ -132,7 +130,6 @@ button:hover {
     background: #882704;
 }
 
-/* ABOUT */
 .about-me {
     background-color: black;
     padding: 80px 60px;
@@ -171,7 +168,6 @@ button:hover {
     object-fit: cover;
 }
 
-/* CONTACT */
 .contact {
     background-color: black;
     margin-top: 20px;
@@ -243,7 +239,6 @@ button:hover {
     word-break: break-word;
 }
 
-/* FOOTER */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -278,9 +273,6 @@ button:hover {
     color: whitesmoke;
 }
 
-/* ================================
-   RESPONSIVE — Large (≤ 992px)
-   ================================ */
 @media (max-width: 992px) {
     .navigation {
         padding: 20px 30px;
@@ -321,12 +313,8 @@ button:hover {
     }
 }
 
-/* ================================
-   RESPONSIVE — Tablets & Mobile (≤ 768px)
-   ================================ */
 @media (max-width: 768px) {
 
-    /* Show hamburger icon on mobile */
     .menu-icon {
         display: flex;
     }
@@ -338,7 +326,6 @@ button:hover {
         position: relative;
     }
 
-    /* Hide nav links by default */
     .navigation ul {
         display: none;
         flex-direction: column;
@@ -351,12 +338,10 @@ button:hover {
         list-style: none;
     }
 
-    /* Reveal nav when checkbox checked */
     .menu-toggle:checked ~ ul {
         display: flex;
     }
 
-    /* Animate hamburger to X */
     .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -372,7 +357,6 @@ button:hover {
         margin: 8px 0;
     }
 
-    /* Hero */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -397,7 +381,6 @@ button:hover {
         font-size: 16px;
     }
 
-    /* About */
     .about-me {
         padding: 60px 22px;
     }
@@ -412,7 +395,6 @@ button:hover {
         height: 160px;
     }
 
-    /* Contact — fix card overflow on mobile */
     .contact-me {
         padding: 60px 16px;
     }
@@ -442,7 +424,6 @@ button:hover {
         box-sizing: border-box;
     }
 
-    /* Footer */
     .footer {
         flex-direction: column;
         gap: 16px;
@@ -455,9 +436,6 @@ button:hover {
     }
 }
 
-/* ================================
-   RESPONSIVE — Phones (≤ 480px)
-   ================================ */
 @media (max-width: 480px) {
     .logo,
     .shaun {
